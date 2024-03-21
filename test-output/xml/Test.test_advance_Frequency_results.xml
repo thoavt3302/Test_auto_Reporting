@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="77.534">
+  <properties />
+  
+  
+            <testcase name="TC_login_Account" time="7.305" classname="Test.test_advance_Frequency" />
+                <testcase name="TC_Advance_hourly" time="45.516" classname="Test.test_advance_Frequency" />
+                <testcase name="TC_Advance_once" time="24.713" classname="Test.test_advance_Frequency" />
+      
+</testsuite>

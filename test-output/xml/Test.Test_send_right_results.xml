@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="33.635">
+  <properties />
+  
+  
+            <testcase name="TC_login_Account" time="7.412" classname="Test.Test_send_right" />
+                <testcase name="TC_Create_report" time="26.223" classname="Test.Test_send_right" />
+      
+</testsuite>

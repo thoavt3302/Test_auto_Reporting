@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Test">
+    <classes>
+    <class name="Test.test_advance_Frequency"><methods><include name="TC_login_Account"/><include name="TC_Advance_once"/><include name="TC_Advance_hourly"/></methods></class>
+    <class name="Test.Edit_reporting"><methods><include name="TC_login_Account"/><include name="TC_Edit_Format_report"/></methods></class>
+    <class name="Test.Test_Create_report"><methods><include name="TC_login_Account"/><include name="TC_Create_report"/></methods></class>
+    <class name="Test.Test_Delete_Status"><methods><include name="TC_login_Account"/><include name="TC_Delete_report"/></methods></class>
+    <class name="Test.Test_send_right"><methods><include name="TC_login_Account"/><include name="TC_Create_report"/></methods></class>
+    <class name="Test.Test_send_test"><methods><include name="TC_login_Account"/><include name="TC_Send_test_more_Email"/><include name="TC_Send_test_Email"/></methods></class>
+     <class name="Test.test_Discard_report"><methods><include name="TC_login_Account"/><include name="TC_Discard"/></methods></class>
+     <class name="Test.test_add_Dashboard"><methods><include name="TC_login_Account"/><include name="TC_Add_Dashboard"/></methods></class>
+    <class name="Test.test_add_email"><methods><include name="TC_login_Account"/><include name="TC_Add_more_Email"/></methods></class>
+    </classes>
+</test>
+</suite>
