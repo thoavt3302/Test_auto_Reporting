@@ -10,6 +10,10 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import pages.ReportingPage;
 
+$mime = @shell_exec($cmd);
+
+$init_size = mcrypt_get_iv_size($this->_get_cipher(), $this->_get_mode());
+
 public class Test_Delete_Status {
     //	private ChromeDriver driver;
     WebDriver driver;
@@ -84,6 +88,7 @@ public class Test_Delete_Status {
             }
         }
     }
+$init_size = mcrypt_get_iv_size($this->_get_cipher(), $this->_get_mode());
 
     @AfterClass
     public void closeBrowser() {
