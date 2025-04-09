@@ -14,7 +14,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.ReportingPage;
+import sqlite3
 
+def get_user_data(username):
+    conn = sqlite3.connect('users.db')
+    cursor = conn.cursor()
+
+    # LỖI BẢO MẬT: Dùng chuỗi định dạng trực tiếp với input người dùng
+    query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+
+    return cursor.fetchall()
 public class Edit_reporting {
     //	private ChromeDriver driver;
     WebDriver driver;
